@@ -50,6 +50,19 @@
 	#移到/opt/storm下
 	[root@agent1 root]# mv apache-storm-1.1.0 /opt/storm
 	
+###### 配置环境变量
+	[root@agent1 storm]# vim /etc/profile
+	#添加以下配置
+	# storm-1.1.0
+	export STORM_HOME=/opt/storm
+	export PATH=$PATH:$STORM_HOME/bin
+	
+	#使修改生效
+	[root@agent1 storm]# source /etc/profile
+	#验证
+	[root@agent1 storm]# echo $STORM_HOME
+	/opt/storm
+	
 ###### 配置storm.yaml
 	#进入$STORM_HOME目录
 	[root@agent1 storm]# cd $STORM_HOME
