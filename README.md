@@ -1,6 +1,6 @@
 # zookeeper安装
 
-######安装配置zookeeper
+###### 安装配置zookeeper
 	#解压zookeeper
 	[root@agent1 ~]$ sudo tar -zxvf zookeeper-3.4.10.tar.gz
 	#把解压后的zookeeper移到目录/opt/zookeeper下
